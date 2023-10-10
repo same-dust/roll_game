@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>游戏欢迎界面</title>
+    <style>
+        body {
+            background-image: url('./online/image/index.png');
+            background-size: cover;
+        }
+        .container {
+            position: fixed;
+            width: 400px;
+            height: 500px;
+            left: 38%;
+            top:10%;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255,255,255, 0.5);
+        }
+        h1{
+            position: absolute;
+            top: 3%;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .box{
+            width: 170px;
+            height: 70px;
+            display: flex;
+            border: 1px solid #000;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .local{
+            position: fixed;
+            left: 46%;
+            top: 26%;
+        }
+        .online{
+            position: fixed;
+            left: 46%;
+            top:66%;
+        }
+        .hm{
+            position: fixed;
+            left: 46%;
+            top:46%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>游戏欢迎界面</h1>
+        </div>
+        <a href="./local/local.html">
+            <div class="box local">
+                本地对战
+            </div>
+        </a>
+        <a href="./hmbattle/hmbattle.html">
+            <div class="box hm">
+                人机对战
+            </div>
+        </a>
+        <a href="http://localhost:3000">
+            <div class="box online">
+                联机对战
+            </div>
+        </a>
+    </div>
+</body>
+</html>

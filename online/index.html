@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联机对战</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+
+  <div class="pre">
+    <input type="number" id="局数" placeholder="请输入想要对战的局数">
+    <button id="start-btn">开始</button>
+  </div>
+  <fieldset class="odds_select">
+    <legend>请选择赔率</legend>
+    玩家一：
+    <select name="赔率一" id="odds1">
+      <option value='0' selected>0</option>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+  </select>
+  <button id="confirm-btn1">确定</button>
+    玩家二：
+    <select name="赔率二" id="odds2">
+      <option value='0' selected>0</option>
+      <option value='1'>1</option>
+      <option value='2'>2</option>
+      <option value='3'>3</option>
+  </select>
+    <button id="confirm-btn2">确定</button>
+  </fieldset>
+  <div class="desktop">
+    <!-- 回合数（总共三回合） -->
+    <!-- 默认左边先摇 -->
+    <!-- 当前回合 -->
+    <h1>Round: 1</h1>
+    <!-- 总局数 -->
+    <h2 class="Tn-rounds">总局数:3</h2>
+    <!-- 剩余回合 -->
+    <h2 class="Rn-rounds">剩余回合:2</h2>
+    <!-- 总赔率 -->
+    <h2 class="Total-odds">总赔率:1</h2>
+    <div class="player-area left">
+      <h2>玩家一
+        <div class="chip left">筹码:1000</div>
+        <div class="odds left">赔率</div>
+        <button id="left-roll-btn">Roll</button>
+        <button id="left-lock-btn">continue</button>
+      </h2>
+      <!-- 投掷区 -->
+      <div class="Throwing-area left">
+        投掷区
+        <div class="dice dice1" data-value="0">
+        </div>
+        <div class="dice dice2" data-value="0">
+        </div>
+        <div class="dice dice3" data-value="0">
+        </div>
+        <div class="dice dice4" data-value="0">
+        </div>
+        <div class="dice dice5" data-value="0">
+        </div>
+      </div>
+      <!-- 锁定区 -->
+      <div class="Lock-area left">
+        锁定区
+        <div class="dice lock1">
+        </div>
+        <div class="dice lock2">
+        </div>
+        <div class="dice lock3">
+        </div>
+        <div class="dice lock4">
+        </div>
+        <div class="dice lock5">
+        </div>
+      </div>
+    </div>
+
+    <div class="player-area right">
+      <h2>玩家二
+        <div class="chip right">筹码:1000</div>
+        <div class="odds right">赔率</div>
+        <button id="right-roll-btn">Roll</button>
+        <button id="right-lock-btn">continue</button>
+      </h2>
+      <!-- 投掷区 -->
+      <div class="Throwing-area right">
+        投掷区
+        <div class="dice dice1" data-value="0">
+        </div>
+        <div class="dice dice2" data-value="0">
+        </div>
+        <div class="dice dice3" data-value="0">
+        </div>
+        <div class="dice dice4" data-value="0">
+        </div>
+        <div class="dice dice5" data-value="0">
+        </div>
+      </div>
+      <!-- 锁定区 -->
+      <div class="Lock-area right">
+        锁定区
+        <div class="dice lock1">
+        </div>
+        <div class="dice lock2">
+        </div>
+        <div class="dice lock3">
+        </div>
+        <div class="dice lock4">
+        </div>
+        <div class="dice lock5">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="game-over">Game Over
+    <div class="final-chip1"></div>
+    <div class="final-chip2"></div>
+    <button id="return-btn" onclick="returnToIndex()">Return</button>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

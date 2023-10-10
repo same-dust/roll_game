@@ -1,0 +1,154 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url('./image/index.png');
+  background-size: cover;
+}
+.desktop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    position:relative;
+    background-image: url('./image/game.png');
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.player-area {
+  width: 40%;
+  height:70%;
+  border: 1px solid #000;
+  padding: 10px;
+  background-color: #fff;
+  position:relative;
+  top:100px;
+}
+
+.player-area.left {
+  margin-right: 10px;
+  float:left;
+}
+
+.player-area.right {
+  margin-left: 10px;
+  float:right;
+}
+
+.Throwing-area,.Lock-area{
+  height: 70%;
+  width: 35%;
+  border: 1px solid #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.Throwing-area{
+  float: left;
+}
+
+.Lock-area{
+  float: right;
+}
+
+h1{
+  position: absolute;
+  left: 45%;
+  top:10px;
+}
+
+.Tn-rounds{
+  position: absolute;
+  left: 10%;
+  top: 10px;
+  opacity: 1;
+}
+
+.Rn-rounds{
+  position: absolute;
+  right: 10%;
+  top: 10px;
+  opacity: 1;
+}
+
+#left-roll-btn,#right-roll-btn{
+  position: absolute;
+  font-size: 30px;
+  right: 35%;
+  top: 10%;
+}
+
+#left-lock-btn,#right-lock-btn{
+  position: absolute;
+  font-size: 30px;
+  right: 10%;
+  top: 10%;
+}
+
+.Total-odds{
+  position:absolute;
+  left: 45%;
+  bottom: 1%
+}
+
+.pre{
+  position: fixed;
+  float:left;
+  top: 45%;
+  left: 30%;
+}
+
+input,#start-btn{
+  font-size: 30px;
+}
+
+.odds_select{
+  position: fixed;
+  float:left;
+  top: 45%;
+  left: 40%;
+  visibility: hidden;
+}
+
+.game-over{
+  position: fixed;
+  float:left;
+  top: 30%;
+  left: 30%;
+  visibility: hidden;
+  font-size: 100px;
+}
+
+.final-chip1,.final-chip2{
+  font-size: 50px;
+}
+
+#return-btn{
+    width: 100px;
+    height: 50px;
+}
+
+.dice {
+    width: 30%;
+    height: 17%;
+    border: 1px solid #000;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 70px;
+    margin: 10px;
+    pointer-events: visible;
+    /* visibility: hidden; */
+}
+
+.dice .content {
+    pointer-events: auto;
+}
