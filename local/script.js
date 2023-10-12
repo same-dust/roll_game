@@ -28,6 +28,7 @@ function rollDice(str) {
     btn.style.display='none';
     const player=document.querySelector(`.player-area.${str}`);
     document.getElementById(`${str}-roll-btn`).addEventListener("click", function() {  
+        btn.style.display='block';
         if(str==='left'&&count1>=2)
         {
             count1++;
@@ -52,8 +53,7 @@ function rollDice(str) {
             }
             // 只找第一个，即投掷区的dice
             player.querySelector(`.dice${i}`).innerText=side;
-            player.querySelector(`.dice${i}`).dataset.value=randomNumber;
-            btn.style.display='block';
+            player.querySelector(`.dice${i}`).dataset.value=randomNumber;          
             // 第三轮摇完赋值后直接全部锁定
             if(count1===3&&str==='left'){
                 dice.classList.add('lock');

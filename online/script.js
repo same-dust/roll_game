@@ -135,6 +135,7 @@ const player=document.querySelector(`.player-area.${str}`);
 let randomarr=[0,0,0,0,0];
 // 摇色子
 document.getElementById(`${str}-roll-btn`).addEventListener("click", function() {  
+  btn.style.display='block';
   if(str==='left'&&count1>=2)
     {
         count1++;
@@ -176,7 +177,7 @@ document.getElementById(`${str}-roll-btn`).addEventListener("click", function() 
       str:str,
       randomarr:randomarr
     }
-    btn.style.display='block';
+    
     socket.emit('roll',data);
      // // ⚀ ⚁ ⚂ ⚃ ⚄ ⚅
 });
