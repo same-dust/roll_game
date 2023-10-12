@@ -2,7 +2,7 @@
 
 ## 欢迎界面
 
-![](D:\github\roll_game\image\欢迎界面.jpg)
+![](./image/欢迎界面.jpg)
 
 ## 对战流程（以人机对战为例）
 
@@ -12,19 +12,19 @@
 
 ### 1.先选择想要对战的局数
 
-![](D:\github\roll_game\image\1.jpg)
+![](.\image\1.jpg)
 
 ### 2.进入游戏桌面
 
-![](D:\github\roll_game\image\2.jpg)
+![](.\image\2.jpg)
 
 玩家点击roll按钮，投掷区会随机生成骰子，同时continue按钮出现（用来确认锁定，将已锁定的骰子锁定到锁定区），玩家需要点击投掷区中想要锁定的骰子，把想要锁定的骰子都点击后，可点击continue继续
 
-![](D:\github\roll_game\image\3.png)
+![](.\image\3.png)
 
 随后人机也会自动进行摇色子，在三秒后，可以进行倍率的选择
 
-![](D:\github\roll_game\image\4.png)
+![](.\image\4.png)
 
 点击界面后就再回到了游戏界面，大致就是这样。本地对战的话，就是人机变成了玩家二，就相当于要操作两个玩家，操作流程还是一样
 
@@ -38,7 +38,7 @@
 
 
 
-![](D:\github\roll_game\image\6.png)
+![](.\image\6.png)
 
 #### 然后要打开终端（这里以VScode的集成终端为例）
 
@@ -48,7 +48,7 @@
 node app.js
 ```
 
-![](D:\github\roll_game\image\5.png)
+![](.\image\5.png)
 
 如果3000端口没被占用，你将在终端看到如上提示，如果被占用，可以使用vscode自带的快捷键ctrl+f，查询3000，然后把3000替换成空闲的端口号
 
