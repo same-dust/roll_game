@@ -1,5 +1,9 @@
 # roll_game
 
+**b站视频链接:**https://b23.tv/utRdWUA
+
+**项目相关技术栈:**前端使用**html+css+js**,后端使用的是**node.js**，联机对战使用的是**socket.io**
+
 ## 欢迎界面
 
 ![](./image/欢迎界面.jpg)
